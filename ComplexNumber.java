@@ -95,10 +95,10 @@ public class ComplexNumber {
 
     public void setArgument(double value) {
         while (value >= Math.PI) {
-            value -= Math.PI;
+            value -= 2 * Math.PI;
         }
         while (value < -Math.PI) {
-            value += Math.PI;
+            value += 2 * Math.PI;
         }
         argument = value;
         updateCartesianVariables();
